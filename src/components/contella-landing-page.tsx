@@ -105,7 +105,7 @@ export default function Component() {
                                 </h2>
                                 <Link
                                     className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                                    href="#"
+                                    href="/subscription"
                                 >
                                     Learn More
                                 </Link>
@@ -132,7 +132,7 @@ export default function Component() {
                             </div>
                             <div className="space-x-4">
                                 <Button className="bg-white text-black hover:bg-gray-200" size="lg">
-                                    Get in Touch
+                                    <Link href="/subscription">Get in Touch</Link>
                                 </Button>
                                 {/* <Button variant="outline" size="lg">
                   Schedule Demo

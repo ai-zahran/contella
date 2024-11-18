@@ -16,11 +16,13 @@ export default function Component() {
 
           <div className="space-y-8">
             <p className="text-xl sm:text-2xl text-center text-[#1A1A1A]/80">
-              Please enter your email address to start
+              We are excited to learn that you are interested in <b>Contella</b>.<br />
+              We are currently in the development phase, and we have big plans to come.<br />
+              To keep up to date with our latest updates, please enter your email address.
             </p>
 
             {/* Start Mailchimp Embed */}
-            <div id="mc_embed_shell" className="max-w-2xl mx-auto w-full bg-white p-6 rounded-lg shadow">
+            <div id="mc_embed_shell" className="max-w-2xl mx-auto w-full p-6 rounded-lg">
               <div id="mc_embed_signup">
                 <form action="https://gmail.us13.list-manage.com/subscribe/post?u=6c2516d2769670816e720d8aa&amp;id=5745cc002c&amp;f_id=00fcdce2f0"
                   method="post"
@@ -30,7 +32,6 @@ export default function Component() {
                   target="_blank"
                   noValidate>
                   <div id="mc_embed_signup_scroll">
-                    <h2 className="text-xl font-bold text-center">Subscribe</h2>
                     <div className="mc-field-group mt-4">
                       <label htmlFor="mce-EMAIL" className="block text-sm font-medium">Email Address <span className="text-red-600">*</span></label>
                       <input
