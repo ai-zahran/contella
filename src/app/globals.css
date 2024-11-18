@@ -23,3 +23,11 @@ body {
 #mce-EMAIL {
   color: black;
 }
+
+* {
+  scroll-behavior: smooth;
+}
+
+title {
+  color: #302644;
+}

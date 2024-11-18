@@ -1,23 +1,30 @@
 'use client'
 
+import Link from "next/link"
+
 export default function Component() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#5CDB95] to-[#82E9C4] flex flex-col items-start justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-6xl mx-auto">
-        <div className="space-y-24">
+        <div className="space-y-12">
           <div className="space-y-2">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1A1A]">
-              Contella
-            </h1>
-            <h2 className="text-xl sm:text-2xl text-[#1A1A1A]/90">
-              The AI Contract Reviewer
+            <div className="flex items-center gap-3">
+              <img src="/assets/contella_logo_russian_violet.png" alt="Contella logo" className="h-12 w-12" />
+              <Link className="flex items-center justify-center" href="/">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#303644]">
+                Contella
+              </h1>
+              </Link>
+            </div>
+            <h2 className="text-xl sm:text-2xl text-[#303644]/90">
+              The AI-Powered Contract Management System
             </h2>
           </div>
 
           <div className="space-y-8">
-            <p className="text-xl sm:text-2xl text-center text-[#1A1A1A]/80">
-              We are excited to learn that you are interested in <b>Contella</b>.<br />
-              We are currently in the development phase, and we have big plans to come.<br />
+            <p className="text-xl sm:text-2xl text-justify text-[#303644]/90">
+              We are excited to learn that you are interested in <b>Contella</b>!<br />
+              Currently, Conella is in the development phase, and we have big plans for the future.<br /><br />
               To keep up to date with our latest updates, please enter your email address.
             </p>
 
@@ -33,7 +40,7 @@ export default function Component() {
                   noValidate>
                   <div id="mc_embed_signup_scroll">
                     <div className="mc-field-group mt-4">
-                      <label htmlFor="mce-EMAIL" className="block text-sm font-medium">Email Address <span className="text-red-600">*</span></label>
+                      <label htmlFor="mce-EMAIL" className="block text-sm font-medium text-[#303644]">Email Address <span className="text-red-600">*</span></label>
                       <input
                         type="email"
                         name="EMAIL"

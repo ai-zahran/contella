@@ -9,11 +9,14 @@ import Image from "next/image"
 export default function Component() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-green-400 to-emerald-50">
-            <header className="px-4 lg:px-6 h-16 flex items-center text-gray-800">
+            <header className="px-4 lg:px-6 h-16 flex items-center text-[#303644]">
+                <div className="flex items-center gap-3">
+                <img src="/assets/contella_logo_russian_violet.png" alt="Contella logo" className="h-8 w-8" />
                 <Link className="flex items-center justify-center" href="#">
                     <span className="font-bold text-2xl">Contella</span>
                     <span className="sr-only">Contella - AI Contract Management Platform</span>
                 </Link>
+                </div>
                 <nav className="ml-auto flex gap-4 sm:gap-6">
                     <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
                         Features
@@ -25,13 +28,13 @@ export default function Component() {
             </header>
             <main className="flex-1 text-gray-800">
                 <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-                    <div className="container mx-auto px-4 md:px-6" id="features">
-                        <div className="flex flex-col items-center space-y-4 text-center">
+                    <div className="container mx-auto px-4 md:px-6">
+                        <div className="flex flex-col items-center space-y-4 text-center" id="features">
                             <div className="space-y-2">
-                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900">
+                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-[#303644]">
                                     Transform Contract Management with AI
                                 </h1>
-                                <p className="mx-auto max-w-[700px] text-gray-700 md:text-xl">
+                                <p className="mx-auto max-w-[700px] text-[#303644] md:text-xl">
                                     Streamline your contract lifecycle with intelligent drafting, automated review, and seamless collaboration.
                                 </p>
                             </div>
@@ -100,7 +103,7 @@ export default function Component() {
                                 <div className="inline-block rounded-lg bg-white/20 backdrop-blur-sm px-3 py-1 text-sm">
                                     Why Choose Contella?
                                 </div>
-                                <h2 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
+                                <h2 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#303644]">
                                     Experience the future of contract management
                                 </h2>
                                 <Link
@@ -111,8 +114,8 @@ export default function Component() {
                                 </Link>
                             </div>
                             <div className="flex flex-col items-start space-y-4">
-                                <Sparkles className="h-12 w-12 text-black" />
-                                <p className="mx-auto max-w-[700px] text-gray-700 md:text-xl/relaxed">
+                                <Sparkles className="h-12 w-12 text-[#303644]" />
+                                <p className="mx-auto max-w-[700px] text-[#303644] md:text-xl/relaxed">
                                     Our platform combines cutting-edge AI technology with intuitive design to revolutionize how legal teams
                                     handle contracts. From drafting to signing, we make every step smoother and more efficient.
                                 </p>
@@ -127,7 +130,7 @@ export default function Component() {
                             <div className="space-y-2">
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to get started?</h2>
                                 <p className="mx-auto max-w-[600px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    Join leading companies using Contella to transform their contract management process.
+                                    Join the new wave of using Contella to transform your contract management process.
                                 </p>
                             </div>
                             <div className="space-x-4">
