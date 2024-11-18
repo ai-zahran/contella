@@ -6,35 +6,29 @@ import { ArrowRight, Bot, FileCheck, Shield, Sparkles } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 
-export default function ContellaLandingPage() {
+export default function Component() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-green-400 to-emerald-200 overflow-x-hidden">
-            <header className="px-4 lg:px-6 h-16 flex items-center">
+        <div className="min-h-screen bg-gradient-to-br from-green-400 to-emerald-50">
+            <header className="px-4 lg:px-6 h-16 flex items-center text-gray-800">
                 <Link className="flex items-center justify-center" href="#">
                     <span className="font-bold text-2xl">Contella</span>
                     <span className="sr-only">Contella - AI Contract Management Platform</span>
                 </Link>
                 <nav className="ml-auto flex gap-4 sm:gap-6">
-                    <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+                    <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
                         Features
                     </Link>
-                    <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-                        Pricing
-                    </Link>
-                    <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-                        About
-                    </Link>
-                    <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+                    <Link className="text-sm font-medium hover:underline underline-offset-4" href="#call-to-action">
                         Contact
                     </Link>
                 </nav>
             </header>
-            <main className="flex-1">
+            <main className="flex-1 text-gray-800">
                 <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-                    <div className="container mx-auto px-4 md:px-6">
+                    <div className="container mx-auto px-4 md:px-6" id="features">
                         <div className="flex flex-col items-center space-y-4 text-center">
                             <div className="space-y-2">
-                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900">
                                     Transform Contract Management with AI
                                 </h1>
                                 <p className="mx-auto max-w-[700px] text-gray-700 md:text-xl">
@@ -43,19 +37,16 @@ export default function ContellaLandingPage() {
                             </div>
                             <div className="space-x-4">
                                 <Button className="bg-black text-white hover:bg-gray-800" size="lg">
-                                    Get Started
+                                    <Link href="/subscription">Join the Waiting List</Link>
                                     <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                                <Button variant="outline" size="lg">
-                                    Book Demo
                                 </Button>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-white/80">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
                     <div className="container mx-auto px-4 md:px-6">
-                        <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">Powerful Features</h2>
+                        {/* <h2 className="text-3xl font-bold tracking-tighter text-center mb-12 text-gray-900">Features</h2> */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <Card className="overflow-hidden">
                                 <div className="aspect-video relative">
@@ -68,7 +59,7 @@ export default function ContellaLandingPage() {
                                 </div>
                                 <CardContent className="p-6">
                                     <h3 className="text-xl font-bold mb-2">AI-Powered Drafting</h3>
-                                    <p className="text-gray-600">Generate contracts intelligently using our advanced AI technology.</p>
+                                    <p className="text-gray-600">Generate and edit contract drafts intelligently for various use cases using our advanced Generative AI drafting tools.</p>
                                 </CardContent>
                             </Card>
                             <Card className="overflow-hidden">
@@ -82,7 +73,7 @@ export default function ContellaLandingPage() {
                                 </div>
                                 <CardContent className="p-6">
                                     <h3 className="text-xl font-bold mb-2">Automated Review</h3>
-                                    <p className="text-gray-600">Review contracts faster with AI-assisted analysis and risk assessment.</p>
+                                    <p className="text-gray-600">Review contracts faster and spot risky clauses with a higher accuracy with AI-assisted analysis and risk assessment.</p>
                                 </CardContent>
                             </Card>
                             <Card className="overflow-hidden">
@@ -95,8 +86,8 @@ export default function ContellaLandingPage() {
                                     />
                                 </div>
                                 <CardContent className="p-6">
-                                    <h3 className="text-xl font-bold mb-2">Secure Collaboration</h3>
-                                    <p className="text-gray-600">Collaborate securely with team members and external stakeholders.</p>
+                                    <h3 className="text-xl font-bold mb-2">Centralized Repository</h3>
+                                    <p className="text-gray-600">Organize all your contracts in one secure location. Effortlessly search, retrieve, and monitor key contract obligations to ensure compliance and avoid missed deadlines.</p>
                                 </CardContent>
                             </Card>
                         </div>
@@ -109,7 +100,7 @@ export default function ContellaLandingPage() {
                                 <div className="inline-block rounded-lg bg-white/20 backdrop-blur-sm px-3 py-1 text-sm">
                                     Why Choose Contella?
                                 </div>
-                                <h2 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                                <h2 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
                                     Experience the future of contract management
                                 </h2>
                                 <Link
@@ -125,12 +116,12 @@ export default function ContellaLandingPage() {
                                     Our platform combines cutting-edge AI technology with intuitive design to revolutionize how legal teams
                                     handle contracts. From drafting to signing, we make every step smoother and more efficient.
                                 </p>
-                                <Button variant="outline">Contact Sales</Button>
+                                {/* <Button variant="outline">Contact Sales</Button> */}
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white" id="call-to-action">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
@@ -141,27 +132,27 @@ export default function ContellaLandingPage() {
                             </div>
                             <div className="space-x-4">
                                 <Button className="bg-white text-black hover:bg-gray-200" size="lg">
-                                    Start Free Trial
+                                    Get in Touch
                                 </Button>
-                                <Button variant="outline" size="lg">
-                                    Schedule Demo
-                                </Button>
+                                {/* <Button variant="outline" size="lg">
+                  Schedule Demo
+                </Button> */}
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
-            <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white/50">
-                <p className="text-xs text-gray-700">© 2024 Contella. All rights reserved.</p>
-                <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-                    <Link className="text-xs hover:underline underline-offset-4" href="#">
-                        Terms of Service
-                    </Link>
-                    <Link className="text-xs hover:underline underline-offset-4" href="#">
-                        Privacy
-                    </Link>
-                </nav>
-            </footer>
+            {/* <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white text-gray-700">
+        <p className="text-xs text-gray-700">© 2024 Contella. All rights reserved.</p>
+        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          <Link className="text-xs hover:underline underline-offset-4" href="#">
+            Terms of Service
+          </Link>
+          <Link className="text-xs hover:underline underline-offset-4" href="#">
+            Privacy
+          </Link>
+        </nav>
+      </footer> */}
         </div>
     )
 }
